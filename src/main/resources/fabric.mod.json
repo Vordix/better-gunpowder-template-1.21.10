@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "bettergunpowder",
+	"version": "${version}",
+	"name": "Better Gunpowder",
+	"description": "This Mod will give more uses to gunpowder as well as introduce better and stronger gunpowder",
+	"authors": [
+		"Vordix"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "MIT",
+	"icon": "assets/bettergunpowder/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"net.vordix.bettergunpowder.BetterGunpowder"
+		],
+		"fabric-datagen": [
+			"net.vordix.bettergunpowder.BetterGunpowderDataGenerator"
+		],
+      "client": [
+        "net.vordix.bettergunpowder.BetterGunpowderClient"
+      ]
+	},
+	"mixins": [
+		"bettergunpowder.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.17.3",
+		"minecraft": "~1.21.10",
+		"java": ">=21",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
